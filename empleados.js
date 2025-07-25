@@ -1,15 +1,13 @@
 import rl from './readline.js';
 import { db, conexion } from './db.js';
 import { coleccionNombre } from './config.js';
-import {resultados} from './lectura.js'
-
-
-
+import {registros} from './lectura1.js'
+ 
 
 export async function insertar(){
     try {
         const collection = db.collection(coleccionNombre.prueba);
-        const x = await collection.insertMany(resultados)
+        const x = await collection.insertMany(registros)
             console.log('nombre agregado...')
             conexion.cerrar(); 
 

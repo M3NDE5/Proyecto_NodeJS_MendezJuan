@@ -6,22 +6,20 @@ import {listarEmpleados, insertar} from './empleados.js'
 
 function showMenu(){
     console.log('menu')
-    console.log('crear')
-    console.log('listar')
-    console.log('actualizar')
-    console.log('eliminar')
-    console.log('salir\n')
+    console.log('1. crear')
+    console.log('2. listar')
+    console.log('3. actualizar')
+    console.log('4. eliminar')
+    console.log('5. salir\n')
     rl.question('Seleciona una opcion: ', opt => {
         switch(opt){
             case '1':
                 console.log('caso1')
                 insertar()
-                showMenu();
                 break;
             case '2':
                 console.log('Listar Usuarios')
                 listarEmpleados()
-                showMenu()
                 break;
             case '3':
                 console.log('caso3')
