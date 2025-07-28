@@ -1,10 +1,10 @@
 import rl from './readline.js'
-import {listarEmpleados, insertar} from './empleados.js'
+import {insertar} from './empleados.js'
 
 
 
 
-function showMenu(){
+export function showMenu(){
     console.log('menu')
     console.log('1. crear')
     console.log('2. listar')
@@ -30,6 +30,7 @@ function showMenu(){
                 showMenu();
                 break;
             case '5':
+                console.log('programa terminado.....')
                 rl.close();
                 break;
             default:
