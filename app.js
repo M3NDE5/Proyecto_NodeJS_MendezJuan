@@ -1,33 +1,38 @@
 import rl from './readline.js'
-import {insertar} from './empleados.js'
+import {insertar, buscarEmpleado,modificarUsuario, eliminarUsuarios} from './empleados.js'
 
 
 
 
 export function showMenu(){
     console.log('menu')
-    console.log('1. crear')
-    console.log('2. listar')
-    console.log('3. actualizar')
-    console.log('4. eliminar')
+    console.log('1. INSERTAR DATA')
+    console.log('2. BUSCAR')
+    console.log('3. ACTUALIZAR')
+    console.log('4. ELIMINAR')
     console.log('5. salir\n')
     rl.question('Seleciona una opcion: ', opt => {
         switch(opt){
             case '1':
-                console.log('caso1')
-                insertar()
+                console.log('1. INSERTAR EMPLEADOS\n')
+                rl.question('Ingrese una de las opciones: ', opc => {
+                    switch(opc){
+                        case '1':
+                            insertar()
+                    }   
+                })
                 break;
             case '2':
-                console.log('Listar Usuarios')
-                listarEmpleados()
+                console.log('1. BUSCAR EMPLEADO\n')
+                buscarEmpleado()
                 break;
             case '3':
-                console.log('caso3')
-                showMenu();
+                console.log('1. ACTUALIZAR EMPLEADO')
+                modificarUsuario()
                 break;
             case '4':
-                console.log('caso4')
-                showMenu();
+                console.log('1. ELIMINAR USUARIOS')
+                eliminarUsuarios()
                 break;
             case '5':
                 console.log('programa terminado.....')

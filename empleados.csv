@@ -1,0 +1,2 @@
+_id,tipoDeId.tipo,tipoDeId.nombre,numeroId,nombres,apellidos,telefono,email,genero,ciudad.codigo,ciudad.nombre,ciudad.departamento.codigo,ciudad.departamento.nombre,direccion,activo
+68879d1f60196c554175bc99,CC,Cédula de Ciudadanía,1027150430,Juan Angel,Mendez Martinez,3191234567,juan@gmail.com,M,11001,Bogotá,11,Cundinamarca,Calle 145 #10–20,true
